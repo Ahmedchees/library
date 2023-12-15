@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+<header id="header">
+<nav class="nav">
+<h1>Open Library</h1>
+<button class="openFormBtn">Add Book</button>
+</nav>
+</header>
+<div id="main" class="main">
+
+    </div>
+    <dialog id="dilogBox">
+<div class="formGroup">
+    <form   autocomplete="off">
+        <button id="dailogBoxCloseBtn">X</button>
+        <input type="text" id="title" name="title" placeholder="Book title" required>
+        <input type="text" id="author" name="author" placeholder="Author name" required>
+        <input type="number" id="pages" name="pages" placeholder="Number of pages" required>
+        <label for="bookStatus">
+            
+            <input type="radio" id="Bookread" name="bookStatus" class="bookStatus" value="Unread">
+            unread
+            <input type="radio" id="BookUnread" class="bookStatus" name="bookStatus" value="Read">
+            read
+        </label>
+        <input type="submit" value="Register book" id="btnBookRegister">
+    </form>
+</div>
+</dialog>
+<footer align="center" style="margin-top:30px;"> <a href="" onclick="function pr(e){e.preventDefault()}"> 2023&copy;By Ahmed Mohamed</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
